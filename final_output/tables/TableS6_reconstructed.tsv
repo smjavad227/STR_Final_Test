@@ -1,0 +1,7 @@
+Cell_Type	Target_N	Target_Mean	Target_SD	Control_N	Control_Mean	Control_SD	Fold_Change	Significant
+Neurons	10	0.15	0.337	16	0.327	0.252	0.459	False
+Keratinocytes	10	0.4	0.316	16	0.341	0.259	1.174	False
+Pancreatic Beta Cells	10	0.95	0.158	16	0.539	0.337	1.763	True
+Hepatocytes	10	0.4	0.316	16	0.302	0.11	1.325	False
+T Cells	10	0.1	0.211	16	0.292	0.304	0.343	False
+Fetal Cardiomyocytes	10	0.55	0.284	16	0.422	0.215	1.304	False

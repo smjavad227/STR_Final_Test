@@ -1,0 +1,30 @@
+
+================================================================
+EVOLUTIONARY CONSERVATION ANALYSIS – SUMMARY
+================================================================
+Input:           D:\STR_Final_Test\github_repo\data\raw\all_primate_strs_combined.tsv
+Total STRs:      190,329
+Species:         hg38, panTro6, rheMac10, calJac3
+
+Conserved motifs (min 2 species, ≥10 occurrences): 798
+Average conservation score: 0.614
+Range:           0.000 – 0.993
+
+High‑confidence candidates (≥3 species, score ≥0.7): 254
+
+Top 10 candidates:
+   1. GGA  (len=3)  species=4  score=0.973
+   2. ACAC  (len=4)  species=4  score=0.970
+   3. AAAAAAAAGAAAG  (len=13)  species=4  score=0.969
+   4. CAAAAAACAAAAA  (len=13)  species=3  score=0.967
+   5. AAAAAGAAAAG  (len=11)  species=3  score=0.967
+   6. TGTGTGTATATATA  (len=14)  species=3  score=0.959
+   7. AAAAAAAAAAAAAAG  (len=15)  species=4  score=0.956
+   8. TCTCCC  (len=6)  species=4  score=0.953
+   9. AAAAAAAAAAGAAAG  (len=15)  species=4  score=0.953
+  10. TTTAA  (len=5)  species=4  score=0.953
+
+Output:
+  Tables:  D:\STR_Final_Test\github_repo\output\tables\tables
+  Figures: D:\STR_Final_Test\github_repo\output\tables\figures
+================================================================

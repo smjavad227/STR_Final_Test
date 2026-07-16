@@ -1,0 +1,5 @@
+Category	Count	Percentage	Mean_OE	Mean_Conservation
+Total motifs	1280	100.0	0.0158	
+CG motifs	291	22.73	0.0071	
+Non-CG motifs	989	77.27	0.0184	
+Conserved non-CG motifs	11	0.86		0.768
