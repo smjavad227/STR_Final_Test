@@ -71,3 +71,4 @@ diabetes_extension/Archive_*/
 diabetes_extension/data/methylation/*.gz
 diabetes_extension/results/*.tiff
 diabetes_extension/*.tiff
+crispr_env/

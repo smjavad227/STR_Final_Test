@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.paths import *
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -307,7 +311,7 @@ plt.close()
 
 print("✅ Figure 2 saved (Vote counting bar plot)")
 
-# ==================== 7. FIGURE 3: DISTANCE-BASED ANALYSIS ====================
+# ==================== 7. FIGURE 3: DISTANCE-DIABETES_DIRD ANALYSIS ====================
 fig, ax = plt.subplots(figsize=(10, 6))
 
 # Create mock distance categories for demonstration

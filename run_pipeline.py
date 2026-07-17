@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from config.paths import *
+
 #!/usr/bin/env python3
 """
 Reproducible Pipeline for STR Evolution Analysis
@@ -415,7 +419,7 @@ def collect_final_outputs():
                 print(f"  Warning: Could not copy {file_path.name}: {error}")
 
     # Copy reference tables (Table 1, S1-S5) from the GitHub repository
-    reference_dir = Path(r"D:\Human_STR_Evolution_GitHub\outputs\tables")
+    reference_dir = Path(OUTPUT_DIR) / "tables"
     if reference_dir.exists():
         print("\nCopying reference tables...")
         for file_path in reference_dir.glob("Table*.tsv"):

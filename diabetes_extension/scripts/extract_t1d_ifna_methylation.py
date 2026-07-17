@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 Extract methylation data for T1D from GSE124809 (IFNa-treated human islets).
 """
@@ -6,10 +10,9 @@ import pandas as pd
 import os
 from intervaltree import IntervalTree
 
-BASE = r"D:\STR_Diabetes_Extension"
-DATA = os.path.join(BASE, "data", "methylation")
+DATA = os.path.join(DIABETES_DIR, "data", "methylation")
 
-MOTIF_BED = os.path.join(BASE, "data", "target_motifs_filtered.bed")
+MOTIF_BED = os.path.join(DIABETES_DIR, "data", "target_motifs_filtered.bed")
 PROBE_BED = os.path.join(DATA, "450k_probes_hg19.bed")
 MATRIX_FILE = os.path.join(DATA, "GSE124809_AVG_Beta_DectectionP_data.txt.gz")
 OUTPUT_FILE = os.path.join(DATA, "methylation_results_t1d_ifna.csv")

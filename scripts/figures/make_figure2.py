@@ -1,13 +1,17 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.paths import *
+
 import sys
 from pathlib import Path
 
 # =========================
 # PROJECT ROOT FIX
 # =========================
-BASE_DIR = Path(__file__).resolve().parents[2]
+DIABETES_DIR = Path(__file__).resolve().parents[2]
 
-if str(BASE_DIR) not in sys.path:
-    sys.path.insert(0, str(BASE_DIR))
+if str(DIABETES_DIR) not in sys.path:
+    sys.path.insert(0, str(DIABETES_DIR))
 
 # =========================
 # IMPORTS
@@ -22,7 +26,7 @@ import sys; sys.path.append('..'); from config.output_paths import FIG2_DIR
 # =========================
 # INPUT
 # =========================
-INPUT_FILE = BASE_DIR / "results" / "FINAL_evolutionary_forbidden_integration.tsv"
+INPUT_FILE = DIABETES_DIR / "results" / "FINAL_evolutionary_forbidden_integration.tsv"
 
 FIG2_DIR.mkdir(parents=True, exist_ok=True)
 

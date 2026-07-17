@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 Extract 27K probe coordinates from GPL8490 full table (saved from GEO).
 Column names: 'Chr' and 'MapInfo' (not 'CHR' and 'MAPINFO').
@@ -10,12 +14,11 @@ from intervaltree import IntervalTree
 # ============================================================================
 # Paths
 # ============================================================================
-BASE_DIR = r"D:\STR_Diabetes_Extension"
-DATA_DIR = os.path.join(BASE_DIR, "data", "methylation")
+DATA_DIR = os.path.join(DIABETES_DIR_DIR, "data", "methylation")
 
 TABLE_FILE = os.path.join(DATA_DIR, "GPL8490_full_table.txt")
 PROBE_BED_FILE = os.path.join(DATA_DIR, "27k_probes_hg19.bed")
-MOTIF_BED_FILE = os.path.join(BASE_DIR, "data", "target_motifs_filtered.bed")
+MOTIF_BED_FILE = os.path.join(DIABETES_DIR_DIR, "data", "target_motifs_filtered.bed")
 MATRIX_FILE = os.path.join(DATA_DIR, "GSE21232_series_matrix.txt.gz")
 OUTPUT_CSV = os.path.join(DATA_DIR, "methylation_results_t2d.csv")
 

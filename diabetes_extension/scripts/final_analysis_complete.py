@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 Final combined analysis: T1D (IFNα) + T2D (GSE21232)
 """
@@ -7,8 +11,7 @@ from scipy.stats import ttest_ind
 import numpy as np
 import os
 
-BASE = r"D:\STR_Diabetes_Extension"
-DATA = os.path.join(BASE, "data", "methylation")
+DATA = os.path.join(DIABETES_DIR, "data", "methylation")
 
 print("="*60)
 print("FINAL COMBINED METHYLATION ANALYSIS")

@@ -1,10 +1,14 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.paths import *
+
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+DIABETES_DIR = Path(__file__).resolve().parents[2]
 
-if str(BASE_DIR) not in sys.path:
-    sys.path.insert(0, str(BASE_DIR))
+if str(DIABETES_DIR) not in sys.path:
+    sys.path.insert(0, str(DIABETES_DIR))
 
 from pathlib import Path
 import pandas as pd
@@ -14,9 +18,9 @@ from scipy.stats import mannwhitneyu
 
 import sys; sys.path.append('..'); from config.output_paths import FIG1_DIR
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+DIABETES_DIR = Path(__file__).resolve().parents[2]
 
-INPUT_FILE = BASE_DIR / "results" / "FINAL_evolutionary_forbidden_integration.tsv"
+INPUT_FILE = DIABETES_DIR / "results" / "FINAL_evolutionary_forbidden_integration.tsv"
 
 FIG1_DIR.mkdir(parents=True, exist_ok=True)
 

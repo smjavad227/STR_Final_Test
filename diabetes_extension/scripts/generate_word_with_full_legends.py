@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 generate_word_with_full_legends.py
 
@@ -15,10 +19,9 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 # ============================================================================
 # Paths
 # ============================================================================
-BASE = r"D:\STR_Diabetes_Extension"
-DATA_DIR = os.path.join(BASE, "data", "methylation")
-TABLES_DIR = os.path.join(BASE, "results", "tables")
-OUTPUT_DOCX = os.path.join(BASE, "results", "Tables_with_Full_Legends.docx")
+DATA_DIR = os.path.join(DIABETES_DIR, "data", "methylation")
+TABLES_DIR = os.path.join(DIABETES_DIR, "results", "tables")
+OUTPUT_DOCX = os.path.join(DIABETES_DIR, "results", "Tables_with_Full_Legends.docx")
 
 # ============================================================================
 # Load data

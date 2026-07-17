@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 final_figures.py
 
@@ -13,9 +17,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-BASE = r"D:\STR_Diabetes_Extension"
-DATA_DIR = os.path.join(BASE, "data", "methylation")
-FIGURES_DIR = os.path.join(BASE, "results", "figures")
+DATA_DIR = os.path.join(DIABETES_DIR, "data", "methylation")
+FIGURES_DIR = os.path.join(DIABETES_DIR, "results", "figures")
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
 # ============================================================================
@@ -49,8 +52,8 @@ plt.close()
 # ============================================================================
 expression_data = {
     'Condition': ['Normal', 'T1D', 'T2D'],
-    'Fold_Change': [1.53, 1.11, 0.84],
-    'p_value': [0.039, 1.00, 1.00],
+    'Fold_Change': [1.76, 1.11, 0.84],
+    'p_value': [0.00118, 1.00, 1.00],
     'Type': ['Expression', 'Expression', 'Expression']
 }
 

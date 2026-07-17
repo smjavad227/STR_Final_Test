@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from config.paths import *
+
 """
 Full differential expression analysis for STR Diabetes Extension project.
 Compares target genes (near conserved non-CG motifs) vs control genes
@@ -18,10 +22,9 @@ warnings.filterwarnings('ignore')
 # =============================================================================
 # 1. Path configuration
 # =============================================================================
-BASE_DIR = r"D:\STR_Diabetes_Extension"
-DATA_FILE = os.path.join(BASE_DIR, "data", "expression_data.csv")
-OUT_TABLES = os.path.join(BASE_DIR, "results", "tables")
-OUT_FIGURES = os.path.join(BASE_DIR, "results", "figures")
+DATA_FILE = os.path.join(DIABETES_DIR_DIR, "data", "expression_data.csv")
+OUT_TABLES = os.path.join(DIABETES_DIR_DIR, "results", "tables")
+OUT_FIGURES = os.path.join(DIABETES_DIR_DIR, "results", "figures")
 
 os.makedirs(OUT_TABLES, exist_ok=True)
 os.makedirs(OUT_FIGURES, exist_ok=True)
@@ -158,6 +161,6 @@ print("Figure 2 (Heatmap) saved as PNG and TIFF.")
 # 7. Completion message
 # =============================================================================
 print("\nAnalysis completed successfully.")
-print(f"All outputs are in: {BASE_DIR}")
+print(f"All outputs are in: {DIABETES_DIR_DIR}")
 print(f"  - Table : {OUT_TABLES}")
 print(f"  - Figures: {OUT_FIGURES}")
