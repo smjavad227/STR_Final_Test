@@ -7,7 +7,7 @@ Evolutionary conserved non-CG motifs and their epigenetic dysregulation in type 
 This repository contains the extended analysis of conserved non-CG motifs on chromosome X in pancreatic beta cells, focusing on type 1 diabetes (T1D) and type 2 diabetes (T2D).
 
 Key findings:
-- In healthy beta cells, genes near conserved motifs show higher expression (p = 0.039, FC = 1.53).
+- In healthy beta cells, genes near conserved motifs show significantly higher expression (p = 0.00118, FC = 1.76; Bonferroni-adjusted p = 0.00354).
 - This advantage is lost in T1D (FC = 1.11, ns).
 - In T2D, the pattern reverses (FC = 0.84, ns).
 - Four motifs show significant hypomethylation in T2D (p = 0.0034, FC = 0.53).
@@ -35,7 +35,7 @@ python generate_word_with_full_legends.py
 ## Results Summary
 
 Supplementary Table S7: Expression
-Normal: Target=0.824, Control=0.539, FC=1.53, p=0.039, Sig=*
+Normal: Target=0.950, Control=0.539, FC=1.76, p=0.00118, Sig=**
 T1D: Target=0.266, Control=0.239, FC=1.11, p=1.000, Sig=ns
 T2D: Target=0.179, Control=0.212, FC=0.84, p=1.000, Sig=ns
 
