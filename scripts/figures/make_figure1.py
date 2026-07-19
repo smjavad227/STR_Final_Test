@@ -1,22 +1,16 @@
-import sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config.paths import *
-
 import sys
 from pathlib import Path
 
-DIABETES_DIR = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
 
-if str(DIABETES_DIR) not in sys.path:
-    sys.path.insert(0, str(DIABETES_DIR))
+from config.paths import *
+from config.output_paths import FIG1_DIR
 
-from pathlib import Path
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
-
-import sys; sys.path.append('..'); from config.output_paths import FIG1_DIR
 
 DIABETES_DIR = Path(__file__).resolve().parents[2]
 

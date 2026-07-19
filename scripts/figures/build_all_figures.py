@@ -1,6 +1,3 @@
-import sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config.paths import *
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -11,6 +8,11 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from config.paths import *
 
 
 # ---------------------------------------------------------------------

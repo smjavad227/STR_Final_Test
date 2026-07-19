@@ -2,7 +2,7 @@
 ================================================================
 EVOLUTIONARY CONSERVATION ANALYSIS – SUMMARY
 ================================================================
-Input:           D:\STR_Final_Test\github_repo\data\raw\all_primate_strs_combined.tsv
+Input:           /mnt/e/github_repo/data/raw/all_primate_strs_combined.tsv
 Total STRs:      190,329
 Species:         hg38, panTro6, rheMac10, calJac3
 
@@ -25,6 +25,6 @@ Top 10 candidates:
   10. TTTAA  (len=5)  species=4  score=0.953
 
 Output:
-  Tables:  D:\STR_Final_Test\github_repo\output\tables\tables
-  Figures: D:\STR_Final_Test\github_repo\output\tables\figures
+  Tables:  /mnt/e/github_repo/output/tables/tables
+  Figures: /mnt/e/github_repo/output/tables/figures
 ================================================================

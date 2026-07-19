@@ -224,8 +224,8 @@ If these files are unavailable, generate them using TRF from the corresponding c
 ### Step 2 — Run the Complete Pipeline
 
 ```bash
-cd D:\STR_Final_Test\github_repo
-
+git clone https://github.com/smjavad227/STR_Final_Test.git
+cd STR_Final_Test
 $env:PYTHONUTF8="1"
 
 python run_pipeline.py
