@@ -306,7 +306,11 @@ Output:
   Figures: {fig_dir}
 ================================================================
 """
-    with open(os.path.join(args.output_dir, 'evolutionary_conservation_summary.txt'), 'w') as f:
+    with open(
+        os.path.join(args.output_dir, "evolutionary_conservation_summary.txt"),
+        "w",
+        encoding="utf-8"
+    ) as f:
         f.write(report)
 
     print("\n" + report)
