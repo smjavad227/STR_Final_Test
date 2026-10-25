@@ -1,0 +1,9 @@
+name: str_cytoband
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bedtools=2.30.0
+  - python=3.10
+  - wget
